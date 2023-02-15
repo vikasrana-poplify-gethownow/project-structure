@@ -1,0 +1,15 @@
+@use '@/common/stylesheet/abstracts/variables/variables' as *;
+@use '@/common/stylesheet/abstracts/variables/colors' as *;
+@use '@/common/stylesheet/abstracts/function' as *;
+
+@import './desktop';
+
+@media (min-width: 768px) and (max-width: 1024px)
+{
+  @import './tablet';
+}
+
+@media only screen and (max-width: 767px)
+{
+  @import './mobile';
+}

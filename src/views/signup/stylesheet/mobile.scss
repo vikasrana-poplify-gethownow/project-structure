@@ -1,0 +1,35 @@
+.SignupPage
+{
+    flex-direction: column;
+    min-height: 100vh;
+    row-gap: 35px;
+    justify-content: center;
+  
+	&__Heading
+    {
+        text-align: center;
+        @apply text-[25px];
+    }
+
+	&__LeftSide
+    {       
+        background-color: $color-white;
+        width: 100%;
+
+        &_Logo
+        {
+            display: none;
+        }
+
+        @at-root .SignupPage__MobileLogo
+        {
+            display: block;
+            max-width: 180px;
+        }
+    }
+
+	&__RightSide
+    {
+        width: 100%;
+    }
+}

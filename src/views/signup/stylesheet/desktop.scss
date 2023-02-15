@@ -1,0 +1,55 @@
+.SignupPage
+{
+	display: flex;
+	height: 100vh;
+	justify-content: center;
+
+	&__Heading
+	{
+		margin: 0px 0px clamp(35px, #{convert_px_to_vw(80)}vw, 80px) 0px;
+		@apply text-[36px];
+		@apply leading-[36px];
+	}
+
+	&__LeftSide
+	{
+		background-color: $color-lei-flower;
+		display: flex;
+	    justify-content: center;
+	    align-items: center;
+	    width: 50%;
+
+		&_Logo
+	    {
+			display: block;
+	    	max-width: 267px;
+	    }
+
+		@at-root .SignupPage__MobileLogo
+        {
+            display: none;
+        }
+	}
+
+	&__RightSide
+	{
+		display: flex;
+		flex-direction: column;
+	    justify-content: center;
+	    align-items: center;
+	    width: 50%;
+	}
+
+	&__LoginText
+	{
+		@apply text-[19px];
+		margin-top: 25px;
+	}
+
+	&__LoginLink
+	{
+		color: #6F92CA;
+		margin-left: 5px;
+		cursor: pointer;
+	}
+}
